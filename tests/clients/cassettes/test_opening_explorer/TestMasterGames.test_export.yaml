@@ -3,15 +3,15 @@ interactions:
     body: null
     headers:
       Accept:
-      - application/json
+      - application/x-chess-pgn
       Accept-Encoding:
       - gzip, deflate
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.31.0
+      - python-requests/2.32.5
     method: GET
-    uri: https://explorer.lichess.ovh/master/pgn/LSVO85Cp
+    uri: https://explorer.lichess.ovh/masters/pgn/LSVO85Cp
   response:
     body:
       string: '[Event "3rd Norway Chess 2015"]
@@ -32,6 +32,8 @@ interactions:
 
         [BlackElo "2876"]
 
+        [LichessId "LSVO85Cp"]
+
 
         1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Nxe4 5. d4 Nd6 6. Bxc6 dxc6 7. dxe5
         Nf5 8. Qxd8+ Kxd8 9. h3 h6 10. Rd1+ Ke8 11. Nc3 Ne7 12. b3 Bf5 13. Nd4 Bh7
@@ -44,27 +46,37 @@ interactions:
 
         '
     headers:
-      Access-Control-Allow-Headers:
-      - Accept,If-Modified-Since,Cache-Control,X-Requested-With
-      Access-Control-Allow-Methods:
-      - GET,OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
+      CF-RAY:
+      - a60a2f1c2f7d5f83-EWR
       Cache-Control:
-      - max-age=10800
+      - max-age=2592000
       - public
       Connection:
       - keep-alive
       Content-Length:
-      - '722'
+      - '745'
       Content-Type:
       - application/x-chess-pgn
       Date:
-      - Wed, 01 Nov 2023 07:49:11 GMT
-      Expires:
-      - Wed, 01 Nov 2023 10:49:11 GMT
+      - Thu, 26 Nov 2026 16:14:04 GMT
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=uSCFEJco6XOEdn6LU9S3bDe2cG%2F3p3IL%2BHX8SHIpObwfJ1SlZqnaVcVBXy0k1WnxOAga5mkL9b0ukAmGGGKhgI%2Fu0HBPN7i88B7VUS4gvon2ixzLmoxODGezW2SFeQp4C9F%2FdSvdBZwbpnMiJSgKeuOv"}]}'
       Server:
-      - nginx
+      - cloudflare
+      access-control-allow-headers:
+      - Accept,If-Modified-Since,Cache-Control,X-Requested-With,Authorization
+      access-control-allow-methods:
+      - GET,OPTIONS
+      access-control-allow-origin:
+      - '*'
+      cf-cache-status:
+      - DYNAMIC
+      expires:
+      - Sat, 26 Dec 2026 16:14:04 GMT
+      vary:
+      - Origin
     status:
       code: 200
       message: OK

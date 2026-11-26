@@ -23,3 +23,9 @@ class TestBroadcasts:
     def test_get_by_user(self):
         res = Client().broadcasts.get_by_user(username="lichess", page=1)
         validate(BroadcastsByUser, res)
+
+    @pytest.mark.vcr
+    def test_get_round(self):
+        res = Client().broadcasts.get_round("fnmEB1kH")
+        assert res["round"]["id"] == "fnmEB1kH"
+        assert res["tour"]["slug"] == "fide-world-chess-championship-2026"

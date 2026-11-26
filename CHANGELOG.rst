@@ -6,6 +6,8 @@ To be released
 
 
 * Deprecate Python 3.9 support - minimum required version is now Python 3.10+. This does not mean the library will not work with Python 3.9, but it will not be tested against it anymore.
+* Fixed ``client.opening_explorer.get_otb_master_game``, ``client.broadcasts.get_round`` and
+  ``client.studies.export_by_username``, which requested outdated URLs and always failed with 404/403.
 * Added ``accuracy`` parameter to ``Games.export``, ``Games.export_by_player``,
   ``Games.export_multi``, and ``Games.export_ongoing_by_player``.
   Only available when requesting as JSON.

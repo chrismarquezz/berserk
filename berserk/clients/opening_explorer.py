@@ -204,5 +204,5 @@ class OpeningExplorer(BaseClient):
         :param game_id: game ID
         :return: PGN of the game
         """
-        path = f"/master/pgn/{game_id}"
+        path = f"/masters/pgn/{game_id}"
         return self._r.get(path, fmt=PGN)

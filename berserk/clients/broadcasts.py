@@ -165,7 +165,7 @@ class Broadcasts(BaseClient):
         :param broadcast_id: broadcast round ID (8 characters)
         :return: broadcast round info
         """
-        path = f"/broadcast/-/-/{broadcast_id}"
+        path = f"/api/broadcast/-/-/{broadcast_id}"
         return self._r.get(path, converter=models.Broadcast.convert)
 
     def update_round(

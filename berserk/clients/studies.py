@@ -94,7 +94,7 @@ class Studies(BaseClient):
         :param orientation: for each chapter, include an `Orientation` PGN tag containing the chapter's board orientation
         :return: iterator over all chapters as PGNs
         """
-        path = f"/study/by/{username}/export.pgn"
+        path = f"/api/study/by/{username}/export.pgn"
         params = {
             "clocks": clocks,
             "comments": comments,

@@ -1,0 +1,86 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/x-chess-pgn
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://lichess.org/api/study/by/neio/export.pgn?clocks=True&comments=True&variations=True&source=False&orientation=False
+  response:
+    body:
+      string: '[Event "neio''s Study: Chapter 1"]
+
+        [Date "2016.05.25"]
+
+        [Result "*"]
+
+        [Variant "Standard"]
+
+        [ECO "B90"]
+
+        [Opening "Sicilian Defense: Najdorf Variation, English Attack"]
+
+        [StudyName "neio''s Study"]
+
+        [ChapterName "Chapter 1"]
+
+        [ChapterURL "https://lichess.org/study/7RsXyBkp/mDTTlHbj"]
+
+        [Annotator "https://lichess.org/@/neio"]
+
+        [UTCDate "2016.05.25"]
+
+        [UTCTime "06:17:21"]
+
+        [Orientation "white"]
+
+
+        1. e4 c5 (1... e6 { blah }) 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6.
+        Be3 *
+
+
+
+        '
+    headers:
+      CF-RAY:
+      - a60a2f1e3e3a72ad-EWR
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/x-chess-pgn; charset=utf-8
+      Date:
+      - Thu, 26 Nov 2026 16:14:04 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-headers:
+      - Origin, Authorization, If-Modified-Since, Cache-Control, Content-Type
+      access-control-allow-methods:
+      - OPTIONS, GET, POST, PUT, DELETE
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - BYPASS
+      content-disposition:
+      - attachment; filename=neio-public-studies.pgn
+      permissions-policy:
+      - interest-cohort=()
+      strict-transport-security:
+      - max-age=63072000; includeSubDomains; preload
+      vary:
+      - Origin
+      x-frame-options:
+      - DENY
+    status:
+      code: 200
+      message: OK
+version: 1
